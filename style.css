@@ -112,6 +112,15 @@ li > .dropdown {
     border-top: 1px solid var(--gold-slate);
 }
 
+.top-nav > .row > ul > li > .fa-chevron-down {
+    transition: all 150ms;
+}
+
+.top-nav > .row > ul > li:hover .fa-chevron-down {
+ transform: rotate(180deg);
+
+}
+
 .dropdown > li {
     padding: 10px;
     /* display: flex;
