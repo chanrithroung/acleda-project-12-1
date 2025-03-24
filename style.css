@@ -15,6 +15,7 @@
     --primary-100: #112133;
     --primary-200: #1B2332;
     --gold: #CEA939;
+    --gold-slate: #8e8e8e8c;
     --font-montserrat: "Montserrat", sans-serif;
     --font-nomal: 200;
     --font-semibold: 500;
@@ -63,6 +64,7 @@ body {
     color: white;   
     font-family: var(--font-montserrat);
     transition: all 50ms;
+    position: relative;
 }
 
 .top-nav > .row > ul > li:hover {
@@ -90,4 +92,38 @@ body {
 
 .robot > img {
     height: 60px;
+}
+
+li > .dropdown {
+    position: absolute;
+    height: 0px;
+    width: 200px;
+    top: 100%;
+    left: -29px;
+    background-color: var(--primary-200);   
+    overflow: hidden;
+    transition: all 0.2s;
+
+}
+
+
+.top-nav > .row > ul > li:hover .dropdown {
+    height: 300px;
+    border-top: 1px solid var(--gold-slate);
+}
+
+.dropdown > li {
+    padding: 10px;
+    /* display: flex;
+    justify-content: end; */
+    text-align: end;
+}
+
+.dropdown> li:hover {
+    text-decoration: underline var(--gold);
+    color: var(--gold);
+}
+
+.border-top {
+    border-top: 1px solid var(--gold-slate);
 }
